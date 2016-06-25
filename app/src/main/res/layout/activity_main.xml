@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#eceff1"
+
+            >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ဟာသပေဒသာ"
+                android:textColor="#000000"
+                android:textSize="18dp"
+
+            />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            ></FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            >
+
+
+
+
+                <RadioGroup
+                    android:id="@+id/radio_funny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="အရမ္းရီရတယ္"
+                        android:paddingTop="4dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ရီရတယ္"
+                        android:paddingTop="4dp"
+                        android:paddingRight="12dp"
+                        />
+
+                </RadioGroup>
+
+
+
+
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="အရင္ဟာျပပါ"
+                android:layout_below="@id/radio_funny"
+                android:layout_toLeftOf="@+id/btn_next"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ေနာက္တစ္ခု"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/radio_funny"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"/>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
